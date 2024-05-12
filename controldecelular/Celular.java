@@ -1,17 +1,12 @@
-
 package com.mycompany.controldecelular;
 
-/**
- *
- * @author hannm
- */
 public class Celular {
     // 1.1- Crear clase.
     // 1.2- Crear los atributos. (texto, decimal y boolean)
-    String  marca;
-    String duenio;
-    double precio;
-    boolean estado;
+    private String  marca;
+    private String duenio;
+    private double precio;
+    private boolean estado;
     
     
     //1.3 Crear el constructor.
@@ -47,13 +42,22 @@ public class Celular {
     public void setPrecio(double precio) {
         this.precio = precio;
     }
-
-    @Override
-    public String toString() {
-        return "Celular{" + " Marca = " + marca + ", Dueño = " + duenio + ", Precio = " + precio + ", Estado = " + estado + '}';
-    }
     
     public void marcarHabilitado (){
         estado =true;
     }    
+    
+    public boolean estaHabilitado(){
+        return estado;
+    } 
+
+    @Override
+    public String toString() {
+        return "Celular:" + 
+                "\nMarca: " + marca 
+                + "\nDueño: " + duenio 
+                + "\nPrecio: " + precio 
+                + "\nEstado: " + estado;
+    }
+  
 }
