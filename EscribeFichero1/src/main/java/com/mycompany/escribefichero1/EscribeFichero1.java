@@ -5,10 +5,10 @@ import java.io.*;
 public class EscribeFichero1 {
 
     public static void main(String[] args) {
-        String cad1 = "Esto es una cadena.";
+        String cad1 = "Hola que tal.";
         String cad2 = "Esto es otra cadena.";
         try {
-            BufferedWriter bw = new BufferedWriter(new FileWriter("salida.txt"));
+            BufferedWriter bw = new BufferedWriter(new FileWriter("C:\\Users\\SALA PAFP 30\\Documents\\NetBeansProjects\\EscribeFichero1\\salida.txt"));
             bw.write(cad1);
             bw.newLine();
             bw.write(cad2);

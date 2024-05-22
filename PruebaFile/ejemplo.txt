@@ -1,1 +1,5 @@
-hola q tal
+La clase File:
+Nos permite recuperar información acerca de un archivo o directorio.
+Los objetos de la clase File no abren archivos ni proporcionan herramientas para
+procesar archivos. Se utilizan en combinación con objetos de otras clases de java.io
+para especificar los archivos o directorios que se van a manipular.
